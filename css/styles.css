@@ -1,0 +1,129 @@
+/* Paleta celeste & fuentes */
+:root {
+    --sky: #d8ecf9;              /* fondo */
+    --sky-dark: #347da6;         /* texto principal */
+    --sky-soft: #85c2e0;         /* botones */
+    --gold: #d4af37;             /* bordes dorados */
+  }
+  
+  /* Colores personalizados con Bootstrap */
+  .bg-sky         { background-color: var(--sky) !important; }
+  .text-sky-dark  { color: var(--sky-dark) !important; }
+  .btn-sky-dark   { background: var(--sky-dark); color:#fff; border:2px solid var(--sky-dark); }
+  .btn-outline-sky-dark { border:2px solid var(--sky-dark); color:var(--sky-dark); }
+  .btn-outline-gold      { border:3px solid var(--gold); color:var(--sky-dark); background:#fff; }
+  
+  .font-script { font-family: "Great Vibes", cursive; }
+  .font-serif  { font-family: "Playfair Display", serif; }
+  
+  /* Aparición con IntersectionObserver */
+  .appear { opacity:0; transform:translateY(40px); transition:opacity .8s,transform .8s; }
+  .appear.visible { opacity:1; transform:none; }
+  
+  /* Marco circular foto bebé */
+  .photo-frame {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 6px solid var(--sky-soft);
+    box-shadow: 0 0 0 6px #fff, 0 2px 6px rgba(0,0,0,0.15);
+  }
+  
+  body {
+    background-image: url('../assets/fondo.jpg'); /* ajusta la ruta si es necesario */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+  }
+  
+
+  body::before {
+    content: "";
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../assets/fondo.jpg') no-repeat center center / cover;
+    z-index: -1;
+  }
+  
+
+  .audio-player .icon {
+    font-size: 1.25rem;
+    opacity: 0.5;
+  }
+  
+  #audio-player .btn-sky-dark {
+    background-color: var(--sky-dark);
+    border: none;
+    color: #fff;
+    width: 48px;
+    height: 48px;
+    line-height: 1;
+    transition: transform 0.2s;
+  }
+  
+  #audio-player .btn-sky-dark:hover {
+    transform: scale(1.1);
+    background-color: var(--sky-soft);
+  }
+  .nombre-con-pincel {
+    position: relative;
+    display: inline-block;
+    z-index: 1;
+    padding: 0.5rem 1rem;
+    background: url('../assets/pincel.png') no-repeat center center / 100% 100%;
+    background-size: cover;
+    border-radius: 0.5rem;
+    line-height: 1.2;
+  }
+  
+  .nombre-con-pincel::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0.2em;
+    width: 100%;
+    height: 0.6em;
+    background: url('../assets/pincel.png') no-repeat center/contain;
+    z-index: -1;
+    opacity: 0.8;
+  }
+
+  .audio-player i {
+    opacity: 0.6;
+    transition: transform 0.2s, opacity 0.2s;
+  }
+  .audio-player i:hover {
+    opacity: 1;
+    transform: scale(1.15);
+  }
+  
+  #playBtn {
+    transition: transform 0.2s ease;
+  }
+  #playBtn:hover {
+    transform: scale(1.1);
+  }
+  
+  
+  .seccion-dedicacion p {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.6;
+    font-size: 1rem;
+  }
+  
+  .fecha-evento .badge {
+    font-size: 0.85rem;
+    border-radius: 20px;
+    background-color: #f6e6af; /* color dorado pastel */
+  }
+  
+  .fecha-evento {
+    line-height: 1.2;
+  }
+  

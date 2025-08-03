@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Invitación Bautizo – AXEL ARIEL TIBÁN CASTILLO</title>
+
+  <!-- Bootstrap 5 -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+
+  <!-- Google Fonts + estilos propios -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@400;600&family=Montserrat:wght@300;400;600&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Font Awesome CDN -->
+<link
+rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+/>
+
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body class="bg-sky text-sky-dark">
+
+
+  <!-- HERO -->
+  <section class="container text-center py-5 appear">
+    <img src="assets/angel_1.png" alt="Angelito" width="120" class="mb-3"/>
+    <br>
+    <h1 class="nombre-con-pincel display-4 fw-bold font-script text-center">
+        Axel<br />Tibán
+      </h1>
+      
+
+      <div class="audio-player text-center my-4">
+        <p class="small text-muted fst-italic mb-2">
+          Presioná <strong>play</strong> para reproducir la canción
+        </p>
+      
+        <div class="d-flex justify-content-center align-items-center gap-3 player-controls">
+          <i class="fas fa-random text-secondary fs-5"></i>
+          <i class="fas fa-backward text-secondary fs-5"></i>
+      
+          <button
+            id="playBtn"
+            class="btn btn-sky-dark rounded-circle fs-5 px-3 py-2"
+            aria-label="Reproducir canción"
+            title="Play"
+          >
+            <i class="fas fa-play"></i>
+          </button>
+      
+          <i class="fas fa-forward text-secondary fs-5"></i>
+          <i class="fas fa-redo text-secondary fs-5"></i>
+        </div>
+      
+        <audio id="song" src="assets/cancion.mp3"></audio>
+      </div>
+      
+      
+      
+  </section>
+
+  <!-- FOTO BEBÉ -->
+  <section class="container text-center py-5 appear">
+    <div class="mx-auto mb-4 photo-frame">
+      <img src="assets/ninio_1.jpeg" class="w-100 h-100 object-fit-cover" alt="Bebé" />
+    </div>
+
+    <ul class="list-unstyled">
+      <li><strong>MIS PADRES:</strong><br> JENNYFER CASTILLO <br> JONATHAN TIBÁN</li>
+      <br>
+      <li><strong>MIS PADRINOS:</strong><br> LICETH CASTILLO <br> MICHAEL HURTADO</li>
+    </ul>
+  </section>
+
+  <!-- TEXTO -->
+ <!--  <section class="container text-center py-5 appear">
+    <p class="lead font-serif">
+      Dios siempre estuvo presente en mi embarazo…<br />
+      Con amor y esperanza dedicamos este día al bautizo de AXEL ARIEL TIBÁN CASTILLO.
+    </p>
+  </section>
+ -->
+  <section class="container text-center py-5 appear seccion-dedicacion">
+    <p class="font-serif text-muted mb-4">
+      Dios siempre estuvo presente en mi embarazo en todos los momentos difíciles, nunca nos abandonó.<br />
+      Nos hizo un milagro soñado: nuestra hijo, lo más deseado de nuestras vidas y lo que más amamos.
+    </p>
+  
+    <p class="font-serif fw-semibold text-sky-dark mb-5">
+      Con amor y esperanza, dedicamos este día al bautizo de Axel Ariel Tibán Castillo.<br />
+      Por esta razón, quiero que compartas con nosotros este día tan especial.
+    </p>
+  
+    <div class="fecha-evento">
+      <div class="fw-semibold small mb-1 text-muted">AGOSTO</div>
+      <div class="display-3 fw-bold text-sky-dark">16</div>
+      <div class="d-flex justify-content-center gap-3 mt-3 text-uppercase small fw-bold">
+        <span class="badge bg-warning-subtle text-dark px-3 py-2 shadow-sm">Sábado</span>
+        <span class="badge bg-warning-subtle text-dark px-3 py-2 shadow-sm">2025</span>
+      </div>
+    </div>
+  </section>
+  
+<!-- COUNTDOWN -->
+<section class="container text-center py-5 appear">
+    <h2 class="mb-4">
+      <span id="day-count" class="display-3 fw-semibold d-block">--</span>
+      Faltan días
+    </h2>
+  
+    <div class="d-flex justify-content-center gap-4 fs-3 fw-semibold flex-wrap">
+      <div><span id="days"    class="d-block fs-1">–</span>DÍAS</div>
+      <div><span id="hours"   class="d-block fs-1">–</span>HORAS</div>
+      <div><span id="minutes" class="d-block fs-1">–</span>MIN</div>
+      <div><span id="seconds" class="d-block fs-1">–</span>SEG</div> <!-- NUEVO -->
+    </div>
+  </section>
+  
+
+  <!-- LUGARES -->
+  <section class="container text-center py-5 appear">
+    <div class="row g-5 justify-content-center">
+
+      <div class="col-12 col-md-5">
+        <img src="assets/iglesia.svg" alt="" width="80" class="mb-2" />
+        <h3 class="h5 mb-3">Iglesia:<br> 12:00PM</h3>
+        
+        <button
+          class="btn btn-sky-dark"
+          data-map="https://www.google.com/maps/search/-0.305413,+-78.489054?entry=tts&g_ep=EgoyMDI1MDcyMy4wIPu8ASoASAFQAw%3D%3D&skid=34c3c11e-f69e-4295-851d-833c318cbd5d"
+        >
+          Ver ubicación
+        </button>
+      </div>
+
+      <div class="col-12 col-md-5">
+        <img src="assets/banquete.svg" alt="" width="80" class="mb-2" />
+        <h3 class="h5 mb-3">Banquete: <br> 13:30PM</h3>
+        <button
+          class="btn btn-sky-dark"
+          data-map="https://www.google.com/maps/search/-0.303998,+-78.490094?entry=tts&g_ep=EgoyMDI1MDcyMy4wIPu8ASoASAFQAw%3D%3D&skid=769682aa-9861-4d2c-8980-9a2bed7b8a05"
+        >
+          Ver ubicación
+        </button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- RSVP -->
+  <section class="container text-center py-5 appear">
+    <p class="fs-5 mb-4">¡Esperamos que seas parte de esta gran celebración!</p>
+    <a
+      href="https://w.app/nkuivi"
+      class="btn btn-outline-gold px-4 py-2"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      Confirmar asistencia
+    </a>
+  </section>
+  
+
+  <footer class="text-center py-4 small">
+    Hecho con <span class="text-danger">♥</span> por @Brisa.creaciones
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
