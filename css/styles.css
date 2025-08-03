@@ -14,7 +14,9 @@
   .btn-outline-gold      { border:3px solid var(--gold); color:var(--sky-dark); background:#fff; }
   
   .font-script { font-family: "Great Vibes", cursive; }
+  .font-script-name { font-family: "Brush Script MT", cursive; }
   .font-serif  { font-family: "Playfair Display", serif; }
+  .font-serif-large  { font-family: "Time New Roman", serif; }
   
   /* Aparición con IntersectionObserver */
   .appear { opacity:0; transform:translateY(40px); transition:opacity .8s,transform .8s; }
